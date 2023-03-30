@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Football">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element name="Conference" minOccurs="1" maxOccurs="2">
+        <xs:simpleType>
+            <xs:restriction base="xs:string"><xs:enumeration value="EC" /><xs:enumeration value="WC" />
+            <xs:enumeration value="AFC" />
+            <xs:enumeration value="NFC" /></xs:restriction></xs:simpleType></xs:element>
+         
+        <xs:element name="Team" minOccurs="2" maxOccurs="16">
+        <element name="owner">
+            <element name="Coach" minOccurs="1" maxOccurs="16"><element name="Players" minOccurs="6" maxOccurs="60">
+                <xs:complexType>
+                <xs:sequence>
+                    <element name="name">
+                    <element name="D.O.B"><element name="Jersey number">
+                        <element name="Position"></element></element></element></element></xs:sequence></xs:complexType>
+                <element name="Mascot name">
+                <element name="Location"/></element></element>
+              </xs:sequence> </xs:complexType> </xs:element> </xs:schema> 
